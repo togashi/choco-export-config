@@ -1,3 +1,3 @@
 # choco-export-config
 
-Exports Chocolatey package list as config.xml format.
+Exports [Chocolatey](https://chocolatey.org/) package list as config.xml format.
