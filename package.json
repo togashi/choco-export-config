@@ -1,0 +1,15 @@
+{
+  "name": "choco-export-config",
+  "version": "1.0.0",
+  "main": "choco-export-config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "choco-export-config": "choco-export-config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
