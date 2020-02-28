@@ -7,7 +7,7 @@ const EXCLUDE_PACKAGE_IDS = [
 const { spawn } = require('child_process');
 const cli = require('commander');
 
-cli.version('1.0.0').description('export Chocolatey config (local package list)')
+cli.version('1.0.1').description('export Chocolatey config (local package list)')
     .option('-p, --no-version', 'do not output versions of each packages')
     .parse(process.argv)
 
@@ -41,14 +41,14 @@ function getLocalPackageList() {
             if (cols.length !== 2) continue;
             const [ id, version ] = cols;
             if (EXCLUDE_PACKAGE_IDS.includes(id)) continue;
-            if (cli.noVersion) {
-                process.stdout.write(`  <package id="${id}" />\r\n`);
-            } else {
+            if (cli.version) {
                 process.stdout.write(`  <package id="${id}" version="${version}" />\r\n`);
+            } else {
+                process.stdout.write(`  <package id="${id}" />\r\n`);
             }
         }
-        process.stdout.write('</packages>')
+        process.stdout.write('</packages>');
     } catch (err) {
-        console.error(err)
+        console.error(err);
     }
 })()

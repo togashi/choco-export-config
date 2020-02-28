@@ -1,6 +1,6 @@
 {
   "name": "@togashi/choco-export-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Exports Chocolatey package list as config.xml format.",
   "main": "choco-export-config.js",
   "dependencies": {
