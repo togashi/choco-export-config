@@ -1,6 +1,6 @@
 {
   "name": "@togashi/choco-export-config",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Exports Chocolatey package list as config.xml format.",
   "main": "choco-export-config.js",
   "dependencies": {
@@ -13,13 +13,17 @@
   "bin": {
     "choco-export-config": "choco-export-config.js"
   },
-    "repository": {
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/togashi/choco-export-config.git"
   },
   "author": "togashi <togashix@gmail.com>",
   "license": "ISC",
-  "keywords": ["chocolatey", "config", "export"],
+  "keywords": [
+    "chocolatey",
+    "config",
+    "export"
+  ],
   "bugs": {
     "url": "https://github.com/togashi/choco-export-config/issues"
   },

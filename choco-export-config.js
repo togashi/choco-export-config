@@ -7,13 +7,13 @@ const EXCLUDE_PACKAGE_IDS = [
 const { spawn } = require('child_process');
 const cli = require('commander');
 
-cli.version('1.0.1').description('export Chocolatey config (local package list)')
+cli.version('1.0.2').description('export Chocolatey config (local package list)')
     .option('-p, --no-version', 'do not output versions of each packages')
     .parse(process.argv)
 
 function getLocalPackageList() {
     return new Promise((resolve, reject) => {
-        const p = spawn('choco', ['list', '-l']);
+        const p = spawn('choco.exe', ['list', '-l']);
         let stdout = '';
         p.stdout.on('data', data => {
             stdout += data.toString('utf-8');

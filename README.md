@@ -13,7 +13,7 @@ Naturally, target platform of this tool is only Windows.
 ## installation
 
 ```shell
-> npm install --global choco-export-config
+> npm install --global togashi/choco-export-config
 ```
 
 ## usage
