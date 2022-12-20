@@ -1,3 +1,13 @@
+# IMPORTANT NOTICES
+
+This repository is no longer maintained.
+
+use `choco export` command, to get package list as config.xml format.
+
+```shell
+> choco export --include-version-numbers --output-file-path=choco.config
+```
+
 # choco-export-config
 
 Exports [Chocolatey](https://chocolatey.org/) package list as config.xml format.
